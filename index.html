@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
+<!--below is the setup for the html file -->
 <head>
     <meta charset= "UTF-8" />
-    <link rel= "stylesheet" href= "./assets/css/style.css">
+    <link rel= "stylesheet" href= "./Assets/css/style.css">
     <title>website</title>
 </head>
 
+<!--beginning of the elements that will be included in the webpage -->
 <body>
+
+    <!--makes a class named header and includes name of company and 3 links
+    leading to the various parts of the webpage. Also pulls "seo" out of 
+    "Horiseon" to change style in css code -->
     <div class= "header">
         <h1>Hori<span class="seo">seo</span>n</h1>
         <div>
             <ul>
                 <li>
-                    <a href= "#search-engine-optimization">Search Engine Optimization</a>
+                    <a href= "#SEO">Search Engine Optimization</a>
                 </li>
 
                 <li>
@@ -27,11 +33,15 @@
         </div>
     </div>
 
+    <!-- creates a class named hero later dealt with in the css file -->
     <div class= "hero"></div>
 
+    <!-- creates separate blocks, each with their own image. These links 
+    alternate the side that they are on on the webpage, starting with the left. 
+    They also include a paragraph of the opposite side of the image in the same "box"-->
     <div class= "content">
 
-        <div class= "search-engine-optimization">
+        <div class= "search-engine-optimization" id = "SEO">
 
             <img src= "./assets/images/search-engine-optimization.jpg" class= "float-left" />
 
@@ -50,9 +60,9 @@
 
             <p>
                 The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
-            </p>
-
+            </p> 
         </div>
+
         <div id= "social-media-marketing" class= "social-media-marketing">
 
             <img src= "./assets/images/social-media-marketing.jpg" class= "float-left" />
@@ -65,6 +75,8 @@
         </div>
     </div>
 
+    <!-- includes a new box including the right sidebar on the website. Each part
+    includes a header, image, and paragraph -->
     <div class= "benefits">
 
         <div class= "benefit-lead">
@@ -101,6 +113,7 @@
         </div>
     </div>
 
+    <!-- creates a footer with text and a copyright underb that text depending on the css code -->
     <div class= "footer">
 
         <h2>Made with ❤️️ by Horiseon</h2>

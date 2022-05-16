@@ -1,13 +1,17 @@
+/* universal change to make margin and padding zero, also changing structure of boxes */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* makes the default of the body a background color */
 body {
     background-color: #d9dcd6;
 }
 
+/* changes the font of the header and padding to 20px. Also adjusts 
+background color and font color. */
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,15 +19,21 @@ body {
     color: #ffffff;
 }
 
+/* changes the display of the header which displays "Horiseon" to be in the same 
+line as the next element */
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
+/* Changes the "seo" part of "Horiseon" to a different color than the rest of the
+name */
 .header h1 .seo {
     color: #d9dcd6;
 }
 
+/* changes the padding, margin, where they are, font, and font size of the links
+to the rest of the page */
 .header div {
     padding-top: 15px;
     margin-right: 20px;
@@ -32,24 +42,34 @@ body {
     font-size: 20px;
 }
 
+/* makes it so there ar4e no denotations of the links being a list */
 .header div ul {
     list-style-type: none;
 }
 
+/* dives in from the parent to the grandchild to make the links on the same line
+and give them a margin from the left */
 .header div ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* Changes the color of the text of the links in the header and assures there is 
+nothing special done to the text */
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* adjusts the size of the font of everything tagged "paragraph */
 p {
     font-size: 16px;
 }
 
+/* adjusts the size of the image included, including making the width
+the width of the window regardless the size of the window.
+inclues a margin on all sides of the image and centers the image in 
+the viewport */
 .hero {
     height: 800px;
     width: 100%;
@@ -59,6 +79,8 @@ p {
     background-position: center;
 }
 
+/* the floats in the next two functions make it so that there is space 
+between eachother in the header */
 .float-left {
     float: left;
     margin-right: 25px;
@@ -69,12 +91,17 @@ p {
     margin-left: 25px;
 }
 
+/* adjust the width of the links, makes them inline and adjusts the left to 
+right margin of them */
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/* completely adjusts everything in the class of "benefits" including the 
+left to right margin, padding on all sides, location of the elements, 
+width in the viewport, size, font, and background color */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -86,10 +113,14 @@ p {
     background-color: #2589bd;
 }
 
+/* the next three functions change everything in their classes to 
+have a bottom margin of 32px and changes text color to the hexidecimal 
+color of #ffffff */
 .benefit-lead {
     margin-bottom: 32px;
     color: #ffffff;
 }
+
 
 .benefit-brand {
     margin-bottom: 32px;
@@ -101,6 +132,8 @@ p {
     color: #ffffff;
 }
 
+/* the next three functions adjust all elements in their class to have their 
+bottom margin changed to 10px and to center all of their text */
 .benefit-lead h3 {
     margin-bottom: 10px;
     text-align: center;
@@ -116,6 +149,8 @@ p {
     text-align: center;
 }
 
+/* the next three functions all adjust thier display to only show one on every line,
+change the margin, and change thier max width to 150 px */
 .benefit-lead img {
     display: block;
     margin: 10px auto;
@@ -134,6 +169,8 @@ p {
     max-width: 150px;
 }
 
+/* the next three functions all adjust their margins, padding, where they sit
+inside their "boxes", font, background color, and the color of the text */
 .search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
@@ -161,6 +198,8 @@ p {
     color: #ffffff;
 }
 
+/* the next three functions all adjust their images in their respective "boxes" to 
+make them a maximum height of 200px */
 .search-engine-optimization img {
     max-height: 200px;
 }
@@ -173,6 +212,8 @@ p {
     max-height: 200px;
 }
 
+/* the next three functions all change the headings in their respective boxes to have 
+a bottom margin of 20px and a afont size of 36px */
 .search-engine-optimization h2 {
     margin-bottom: 20px;
     font-size: 36px;
@@ -188,6 +229,8 @@ p {
     font-size: 36px;
 }
 
+/* this function makes the footer havea padding of 30px, a specific font, and makes
+the text centered in the footer */
 .footer {
     padding: 30px;
     clear: both;
@@ -195,6 +238,8 @@ p {
     text-align: center;
 }
 
+/* this function makes it so that all of the text with a tag of "h2" in the footer has 
+a font size of 20px */
 .footer h2 {
     font-size: 20px;
 }
